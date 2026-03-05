@@ -299,13 +299,21 @@
 
   <!-- SIDEBAR -->
   <aside id="sidebar">
-    <div class="sidebar-section-title">Supplementary Figure</div>
+    <div class="sidebar-section-title">Supplementary Figures</div>
 
     <a class="nav-item active" onclick="showFigure('fig1', this)" href="#">
       <span class="num">S1</span>
       <div>
         <div class="title">Figure 5b</div>
         <div class="subtitle">Readable heatmap of DE genes</div>
+      </div>
+    </a>
+
+    <a class="nav-item" onclick="showFigure('fig2', this)" href="#">
+      <span class="num">S2</span>
+      <div>
+        <div class="title">Figure 5b</div>
+        <div class="subtitle">Heatmap of DE genes</div>
       </div>
     </a>
 
@@ -340,7 +348,7 @@
       <div class="heatmap-wrap">
         <!-- Inline PDF viewer via Google Docs -->
         <iframe
-          src="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Carol-Salomao/sting-supplementary_fig-5B/main/De_genes_by_cluster_readable.pdf&embedded=true"
+          src="https://docs.google.com/viewer?url=https://carol-salomao.github.io/sting-supplementary_fig-5B/De_genes_by_cluster_readable.pdf&embedded=true"
           width="100%"
           style="height: 80vh; border: none; display: block;"
           title="Figure 5b — Readable Heatmap of DE Genes">
@@ -349,7 +357,7 @@
           <span style="font-family:'DM Mono',monospace; font-size:11px; color:var(--muted);">
             Conditions: noUVB_6h · noUVB_3d · UVB_6h · UVB_3d &nbsp;·&nbsp; WT vs VM (STING<sup>V154M</sup>) &nbsp;·&nbsp; z-score: −2 → 0 → +2
           </span>
-          <a href="https://raw.githubusercontent.com/Carol-Salomao/sting-supplementary_fig-5B/main/De_genes_by_cluster_readable.pdf"
+          <a href="https://carol-salomao.github.io/sting-supplementary_fig-5B/De_genes_by_cluster_readable.pdf"
              download
              target="_blank"
              style="display:inline-flex; align-items:center; gap:8px; background:var(--accent); color:#fff; font-family:'DM Mono',monospace; font-size:12px; letter-spacing:0.08em; padding:10px 20px; border-radius:3px; text-decoration:none;"
@@ -368,6 +376,40 @@
     </section>
 
 
+
+    <!-- FIGURE 5b — Heatmap no label -->
+    <section class="figure-block" id="fig2">
+      <div class="figure-header">
+        <span class="figure-tag">Figure 5b</span>
+        <h2 class="figure-title">Heatmap of DE Genes</h2>
+      </div>
+      <p class="figure-caption">
+        Heatmap of differentially expressed (DE) genes grouped by cluster across four conditions:
+        noUVB_6h, noUVB_3d, UVB_6h, and UVB_3d. Each column pair represents wild-type (WT) and
+        STING<sup>V154M</sup> (VM) mice. Color scale reflects z-score (−2 to +2).
+      </p>
+
+      <div class="heatmap-wrap">
+        <iframe
+          src="https://docs.google.com/viewer?url=https://carol-salomao.github.io/sting-supplementary_fig-5B/heatmap_DE_genes_nolabel.pdf&embedded=true"
+          width="100%"
+          style="height: 80vh; border: none; display: block;"
+          title="Figure 5b — Heatmap of DE Genes">
+        </iframe>
+        <div style="background: var(--surface); border-top: 1px solid var(--border); padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <span style="font-family:'DM Mono',monospace; font-size:11px; color:var(--muted);">
+            Conditions: noUVB_6h · noUVB_3d · UVB_6h · UVB_3d &nbsp;·&nbsp; WT vs VM (STING<sup>V154M</sup>) &nbsp;·&nbsp; z-score: −2 → 0 → +2
+          </span>
+          <a href="https://carol-salomao.github.io/sting-supplementary_fig-5B/heatmap_DE_genes_nolabel.pdf"
+             download
+             target="_blank"
+             style="display:inline-flex; align-items:center; gap:8px; background:var(--accent); color:#fff; font-family:'DM Mono',monospace; font-size:12px; letter-spacing:0.08em; padding:10px 20px; border-radius:3px; text-decoration:none;"
+             onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+            ↓ &nbsp; Download PDF
+          </a>
+        </div>
+      </div>
+    </section>
 
   </main>
 </div>
